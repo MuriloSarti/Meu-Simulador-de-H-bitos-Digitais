@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Um simulador interativo para refletir sobre o tempo gasto nas redes sociais.">
+
+    <title>O Tempo Não Volta — Consciência Digital</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+
+        <header>
+            <div class="brand">TEMPO<span>®</span></div>
+            <div class="edition">ESTUDO DIGITAL / 001</div>
+        </header>
+
+        <section class="hero">
+            <span class="eyebrow">TECNOLOGIA · COMPORTAMENTO · TEMPO</span>
+
+            <h1>
+                O TEMPO<br>
+                <span>NÃO VOLTA.</span>
+            </h1>
+
+            <p class="intro">
+                Você escolhe quando entra nas redes sociais.
+                Mas já parou para pensar em quanto da sua vida
+                fica por lá? Descubra o impacto dos seus hábitos digitais.
+            </p>
+        </section>
+
+        <section class="dashboard">
+
+            <div class="panel">
+                <p class="panel-label">01 / INFORME SEU HÁBITO</p>
+
+                <label for="horas">
+                    Quantas horas por dia você passa nas redes?
+                </label>
+
+                <input
+                    type="number"
+                    id="horas"
+                    min="0"
+                    max="24"
+                    step="0.5"
+                    placeholder="00"
+                    required
+                >
+
+                <p class="hint">
+                    Digite um valor de 0 a 24 horas.
+                </p>
+
+                <button id="calcular" type="button">
+                    Analisar meu tempo ↗
+                </button>
+            </div>
+
+            <div class="panel result-panel">
+                <p class="panel-label">02 / O RESULTADO</p>
+
+                <div
+                    id="resultado"
+                    aria-live="polite"
+                    aria-atomic="true"
+                >
+                    <div class="result-number">— <small>HORAS / SEMANA</small></div>
+
+                    <p class="result-description">
+                        Seus números aparecerão aqui depois da análise.
+                        O resultado pode ser o primeiro passo para
+                        entender melhor sua rotina digital.
+                    </p>
+                </div>
+
+                <div class="progress-track" aria-hidden="true">
+                    <div class="progress-bar" id="progresso"></div>
+                </div>
+
+                <div class="stats">
+                    <div class="stat">
+                        <span class="stat-label">POR SEMANA</span>
+                        <strong id="semanal">— h</strong>
+                    </div>
+
+                    <div class="stat">
+                        <span class="stat-label">EM 30 DIAS</span>
+                        <strong id="mensal">— h</strong>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="reflection">
+            <div class="reflection-mark">“</div>
+
+            <div>
+                <h2>Uma questão de perspectiva</h2>
+                <p>
+                    O objetivo não é abandonar a tecnologia, mas usá-la
+                    de forma consciente. O tempo que dedicamos a uma
+                    atividade também é tempo que deixamos de dedicar
+                    a outras experiências.
+                </p>
+            </div>
+        </section>
+
+        <footer>
+            <span>PROJETO ESCOLAR · CONSCIÊNCIA DIGITAL</span>
+            <span>HTML / CSS / JAVASCRIPT</span>
+        </footer>
+
+    </main>
+</body>
+</html>
